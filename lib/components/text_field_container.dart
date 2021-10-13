@@ -3,9 +3,11 @@ import 'package:flutter_auth/constants.dart';
 
 class TextFieldContainer extends StatelessWidget {
   final Widget child;
+  final Color c;
   const TextFieldContainer({
     Key key,
     this.child,
+    this.c = kPrimaryColor,
   }) : super(key: key);
 
   @override
@@ -16,7 +18,7 @@ class TextFieldContainer extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5),
       width: size.width * 0.8,
       decoration: BoxDecoration(
-        color: kPrimaryLightColor,
+        color: c,
         borderRadius: BorderRadius.circular(29),
       ),
       child: child,
