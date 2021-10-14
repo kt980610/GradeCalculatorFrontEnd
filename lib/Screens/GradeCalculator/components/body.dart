@@ -134,7 +134,7 @@ class Body extends StatelessWidget {
                   s = gpa.toString();
                   Navigator.push(context, MaterialPageRoute(builder: (context) => ResultPage(s,letter)),);
                   }
-                },v
+                },
               ),
 
 
