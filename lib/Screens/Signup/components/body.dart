@@ -23,10 +23,12 @@ class Body extends StatelessWidget {
               style: TextStyle(fontWeight: FontWeight.bold),
             ),
             SizedBox(height: size.height * 0.03),
-            SvgPicture.asset(
+            /*SvgPicture.asset(
               "assets/icons/signup.svg",
               height: size.height * 0.35,
-            ),
+            ),*/
+            Image.asset(
+                "assets/images/item_0.jpg", height: size.height * 0.3),
             RoundedInputField(
               hintText: "Your Email",
               onChanged: (value) {},
@@ -60,10 +62,10 @@ class Body extends StatelessWidget {
                   iconSrc: "assets/icons/facebook.svg",
                   press: () {},
                 ),
-                SocalIcon(
+               /* SocalIcon(
                   iconSrc: "assets/icons/twitter.svg",
                   press: () {},
-                ),
+                ),*/
                 SocalIcon(
                   iconSrc: "assets/icons/google-plus.svg",
                   press: () {},

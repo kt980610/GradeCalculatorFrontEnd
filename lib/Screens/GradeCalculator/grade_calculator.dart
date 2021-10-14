@@ -12,6 +12,31 @@ class GradeCalculator extends StatelessWidget {
   }
 
 }
+class ErrorPage extends StatelessWidget {
+  const ErrorPage( {Key key,}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: Background(
+        child: SingleChildScrollView(
+        child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+        Text(
+        " Error ",
+        style: TextStyle(fontWeight: FontWeight.bold),
+
+
+  ),
+  ],
+  ),
+  ),
+  ),
+  );
+}
+
+
+}
 class ResultPage extends StatelessWidget {
   final String s;
   final String letter;

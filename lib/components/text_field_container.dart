@@ -7,7 +7,7 @@ class TextFieldContainer extends StatelessWidget {
   const TextFieldContainer({
     Key key,
     this.child,
-    this.c = kPrimaryColor,
+    this.c = kPrimaryLightColor,
   }) : super(key: key);
 
   @override

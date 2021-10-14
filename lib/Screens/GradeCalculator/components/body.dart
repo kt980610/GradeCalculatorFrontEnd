@@ -74,53 +74,67 @@ class Body extends StatelessWidget {
                   String letter;
                   gpa = a + b + c;
                   gpa = (gpa/3).roundToDouble();
+                  if(gpa < 0 || gpa >100 ) {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => ErrorPage()),);
 
+                  }
+                  else if(a < 0 || a >100 ) {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => ErrorPage()),);
+                  }
+                  else if(b < 0 || b >100 ) {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => ErrorPage()),);
+                  }
+                  else if(c < 0 || c >100 ) {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => ErrorPage()),);
+                  }
+                  else {
                   if(gpa<40) {
-                    letter = 'F';
+                  letter = 'F';
 
                   }
                   if(gpa>=40) {
-                    letter = 'D';
+                  letter = 'D';
 
                   }
                   if(gpa>=45) {
-                    letter = 'D+';
+                  letter = 'D+';
 
                   }
                   if(gpa>=50) {
-                    letter = 'C-';
+                  letter = 'C-';
                   }
                   if(gpa>=55) {
-                    letter = 'C';
+                  letter = 'C';
 
                   }
                   if(gpa>=65) {
-                    letter = 'C+';
+                  letter = 'C+';
 
                   }
                   if(gpa>=73) {
-                    letter = 'B-';
+                  letter = 'B-';
                   }
                   if(gpa>=78) {
-                    letter = 'B';
+                  letter = 'B';
 
                   }
                   if(gpa>=83) {
-                    letter = 'B+';
+                  letter = 'B+';
 
                   }
                   if(gpa>=88) {
-                    letter = 'A-';
+                  letter = 'A-';
 
                   }
                   if(gpa>=95) {
-                    letter = 'A';
+                  letter = 'A';
 
                   }
+
                   s = gpa.toString();
                   Navigator.push(context, MaterialPageRoute(builder: (context) => ResultPage(s,letter)),);
-
-                },
+                  }
+                },v
               ),
 
 

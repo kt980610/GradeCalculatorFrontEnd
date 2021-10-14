@@ -12,7 +12,7 @@ class RoundedInputField extends StatelessWidget {
     this.hintText,
     this.icon = Icons.person,
     this.onChanged,
-    this.buttonColor = kPrimaryColor
+    this.buttonColor = kPrimaryLightColor,
   }) : super(key: key);
 
   @override
@@ -25,7 +25,7 @@ class RoundedInputField extends StatelessWidget {
         decoration: InputDecoration(
           icon: Icon(
             this.icon,
-            color: blueColor,
+            color: kPrimaryColor,
           ),
           hintText: hintText,
           border: InputBorder.none,
